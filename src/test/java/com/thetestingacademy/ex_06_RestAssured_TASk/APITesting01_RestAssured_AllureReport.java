@@ -82,7 +82,7 @@ public class APITesting01_RestAssured_AllureReport {
     @Severity(SeverityLevel.NORMAL)
     @Test(priority = 2)
     public void GET_Booking (){
-        String booking_id = "2294";
+        String booking_id = "1474";
 
         r=RestAssured.given().baseUri("https://restful-booker.herokuapp.com");
         r.basePath("/booking/"+booking_id);
@@ -97,8 +97,8 @@ public class APITesting01_RestAssured_AllureReport {
     @Severity(SeverityLevel.NORMAL)
     @Test(priority = 1)
     public void Partial_Update (){
-        String booking_id = "2294";
-        String token = "523ea8d91c8f163";
+        String booking_id = "1474";
+        String token = "5e75a59bd3317e8";
         String payload_patch = "{\n" +
                 "    \"firstname\" : \"Shyam\",\n" +
                 "    \"lastname\" : \"Brown\"\n" +
@@ -118,8 +118,8 @@ public class APITesting01_RestAssured_AllureReport {
     @Severity(SeverityLevel.NORMAL)
     @Test
     public void Update_Booking (){
-        String token = "4e1317002177f8e";
-        String bookiing_id = "1616";
+        String token = "5c457316973d86d";
+        String bookiing_id = "891";
         String Payload = "{\n" +
                 "    \"firstname\" : \"Krishna\",\n" +
                 "    \"lastname\" : \"Brown\",\n" +
@@ -146,11 +146,11 @@ public class APITesting01_RestAssured_AllureReport {
     @Severity(SeverityLevel.NORMAL)
     @Test(priority = 2)
     public void Delete_Booking (){
-        String token = "284a72efeaea5d8";
-        String booking_id = "282";
+        String token = "448b1607779d949";
+        String booking_id = "764";
 
         r = RestAssured.given().baseUri("https://restful-booker.herokuapp.com");
-        r.basePath("?booking/"+booking_id);
+        r.basePath("/booking/"+booking_id);
         r.contentType(ContentType.JSON);
         r.cookie("token",token).log().all();
 
