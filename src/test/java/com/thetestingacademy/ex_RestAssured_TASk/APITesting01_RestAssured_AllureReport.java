@@ -1,4 +1,4 @@
-package com.thetestingacademy.ex_06_RestAssured_TASk;
+package com.thetestingacademy.ex_RestAssured_TASk;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -9,11 +9,8 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
-import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
-
-import java.util.PriorityQueue;
 
 public class APITesting01_RestAssured_AllureReport {
 

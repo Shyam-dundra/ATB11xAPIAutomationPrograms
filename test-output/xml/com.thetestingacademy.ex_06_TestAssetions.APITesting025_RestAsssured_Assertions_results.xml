@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ATB11xAPIAutomationPrograms"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.598">
+    <properties></properties>
+
+
+
+            <testcase
+                name="test_CreateBookingID"
+                time="2.598"
+                classname="com.thetestingacademy.ex_06_TestAssetions.APITesting025_RestAsssured_Assertions">
+            </testcase>
+</testsuite>
